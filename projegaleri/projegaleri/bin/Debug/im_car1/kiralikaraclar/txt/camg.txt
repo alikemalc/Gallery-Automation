@@ -1,0 +1,4 @@
+Chevrolet Camaro 2.0
+Model Yılı: 2018 Yakıt Türü: Benzin
+Vites Türü: Otomatik Kasa Türü : Coupe
+Motor Gücü: 275 HP Motor Hacmi: 1998 cc

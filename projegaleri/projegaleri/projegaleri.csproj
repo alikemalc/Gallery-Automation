@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BB1553C-5094-4A94-850D-4DE220B7D874}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projegaleri</RootNamespace>
+    <AssemblyName>projegaleri</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.20.1.3\lib\net452\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Xpo.20.1.3\lib\net452\DevExpress.Xpo.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dashboard1.Designer.cs">
+      <DependentUpon>Dashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\aracsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\aracsil.Designer.cs">
+      <DependentUpon>aracsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\depogenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\depogenel.Designer.cs">
+      <DependentUpon>depogenel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\fiyatgüncellecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\fiyatgüncellecs.Designer.cs">
+      <DependentUpon>fiyatgüncellecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\karacekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\karacekle.Designer.cs">
+      <DependentUpon>karacekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\karacsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\karacsil.Designer.cs">
+      <DependentUpon>karacsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\kfiyatgüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\kfiyatgüncelle.Designer.cs">
+      <DependentUpon>kfiyatgüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\gecis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\gecis.Designer.cs">
+      <DependentUpon>gecis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Satis\kiralik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis\kiralik.Designer.cs">
+      <DependentUpon>kiralik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satis\kiralikekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis\kiralikekle.Designer.cs">
+      <DependentUpon>kiralikekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\bmgüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\bmgüncelle.Designer.cs">
+      <DependentUpon>bmgüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\bmsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\bmsil.Designer.cs">
+      <DependentUpon>bmsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\depoliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\depoliste.Designer.cs">
+      <DependentUpon>depoliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\bmekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\bmekle.Designer.cs">
+      <DependentUpon>bmekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\kmekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\kmekle.Designer.cs">
+      <DependentUpon>kmekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="illerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>illerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\kmgüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\kmgüncelle.Designer.cs">
+      <DependentUpon>kmgüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\mlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\mlist.Designer.cs">
+      <DependentUpon>mlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\mgenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\mgenel.Designer.cs">
+      <DependentUpon>mgenel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\anaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel\anaekran.Designer.cs">
+      <DependentUpon>anaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\personelsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel\personelsil.Designer.cs">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\personelgüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel\personelgüncelle.Designer.cs">
+      <DependentUpon>personelgüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\personelekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel\personelekle.Designer.cs">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel\personel.Designer.cs">
+      <DependentUpon>personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris\sifremiunutum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\sifremiunutum.Designer.cs">
+      <DependentUpon>sifremiunutum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris\giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="projegaleri1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleri1DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleri1DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projegaleriDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projegaleriDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Depo\saracekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\saracekle.Designer.cs">
+      <DependentUpon>saracekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\stokgüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\stokgüncelle.Designer.cs">
+      <DependentUpon>stokgüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satis\satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis\satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satis\satisekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis\satisekle.Designer.cs">
+      <DependentUpon>satisekle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\aracsil.resx">
+      <DependentUpon>aracsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\depogenel.resx">
+      <DependentUpon>depogenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\fiyatgüncellecs.resx">
+      <DependentUpon>fiyatgüncellecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\karacekle.resx">
+      <DependentUpon>karacekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\karacsil.resx">
+      <DependentUpon>karacsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\kfiyatgüncelle.resx">
+      <DependentUpon>kfiyatgüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\gecis.resx">
+      <DependentUpon>gecis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis\kiralik.resx">
+      <DependentUpon>kiralik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis\kiralikekle.resx">
+      <DependentUpon>kiralikekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\bmgüncelle.resx">
+      <DependentUpon>bmgüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\bmsil.resx">
+      <DependentUpon>bmsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\depoliste.resx">
+      <DependentUpon>depoliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\bmekle.resx">
+      <DependentUpon>bmekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\kmekle.resx">
+      <DependentUpon>kmekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\kmgüncelle.resx">
+      <DependentUpon>kmgüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\mlist.resx">
+      <DependentUpon>mlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\mgenel.resx">
+      <DependentUpon>mgenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel\anaekran.resx">
+      <DependentUpon>anaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel\personelgüncelle.resx">
+      <DependentUpon>personelgüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel\personel.resx">
+      <DependentUpon>personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\sifremiunutum.resx">
+      <DependentUpon>sifremiunutum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel\personelekle.resx">
+      <DependentUpon>personelekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel\personelsil.resx">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Depo\saracekle.resx">
+      <DependentUpon>saracekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\stokgüncelle.resx">
+      <DependentUpon>stokgüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis\satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis\satisekle.resx">
+      <DependentUpon>satisekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="illerDataSet.xsc">
+      <DependentUpon>illerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="illerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>illerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="illerDataSet.xss">
+      <DependentUpon>illerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="projegaleri1DataSet.xsc">
+      <DependentUpon>projegaleri1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet.xss">
+      <DependentUpon>projegaleri1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet1.xsc">
+      <DependentUpon>projegaleri1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet1.xss">
+      <DependentUpon>projegaleri1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet10.xsc">
+      <DependentUpon>projegaleri1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet10.xss">
+      <DependentUpon>projegaleri1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet11.xsc">
+      <DependentUpon>projegaleri1DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet11.xss">
+      <DependentUpon>projegaleri1DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet12.xsc">
+      <DependentUpon>projegaleri1DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet12.xss">
+      <DependentUpon>projegaleri1DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet2.xsc">
+      <DependentUpon>projegaleri1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet2.xss">
+      <DependentUpon>projegaleri1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet3.xsc">
+      <DependentUpon>projegaleri1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet3.xss">
+      <DependentUpon>projegaleri1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet4.xsc">
+      <DependentUpon>projegaleri1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet4.xss">
+      <DependentUpon>projegaleri1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet5.xsc">
+      <DependentUpon>projegaleri1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet5.xss">
+      <DependentUpon>projegaleri1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet6.xsc">
+      <DependentUpon>projegaleri1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet6.xss">
+      <DependentUpon>projegaleri1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet7.xsc">
+      <DependentUpon>projegaleri1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet7.xss">
+      <DependentUpon>projegaleri1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet8.xsc">
+      <DependentUpon>projegaleri1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet8.xss">
+      <DependentUpon>projegaleri1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet9.xsc">
+      <DependentUpon>projegaleri1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleri1DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleri1DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleri1DataSet9.xss">
+      <DependentUpon>projegaleri1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleriDataSet.xsc">
+      <DependentUpon>projegaleriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projegaleriDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projegaleriDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projegaleriDataSet.xss">
+      <DependentUpon>projegaleriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
+    <Content Include="iller.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\black_car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

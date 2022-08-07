@@ -1,0 +1,4 @@
+Audi A6 Sedan 2.0 TFSI Quattro 
+Model Yılı: 2019 Yakıt Türü: Benzin
+Vites Türü: Otomatik Kasa Türü : Sedan
+Motor Gücü: 252 HP Motor Hacmi: 1984 cc
